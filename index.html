@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 NPO Art and Culture in Israel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        #search-input {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .table-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .npo-logo {
+            width: 60px;
+            height: auto;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        .npo-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .npo-link:hover {
+            text-decoration: underline;
+        }
+
+
+        #no-results {
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            display: none;
+        }
+
+       #result-count {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            th, td {
+                padding: 10px;
+            }
+
+            .npo-logo {
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>25 NPO Art and Culture in Israel</h1>
+    <input type="text" id="search-input" placeholder="Search by name...">
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Logo</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/jerusalemfoundation.svg" class="npo-logo"></td>
+                    <td>The Jerusalem Foundation</td>
+                    <td>Jerusalem</td>
+                    <td>A philanthropic foundation that supports a wide range of cultural and social projects in Jerusalem.</td>
+                    <td><a href="https://www.jerusalemfoundation.org/" class="npo-link" target="_blank">https://www.jerusalemfoundation.org/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/aicf.svg" class="npo-logo"></td>
+                    <td>The America-Israel Cultural Foundation</td>
+                    <td>New York</td>
+                    <td>A philanthropic foundation that supports a wide range of cultural and social projects in Israel.</td>
+                    <td><a href="https://www.aicf.org/" class="npo-link" target="_blank">https://www.aicf.org/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/israel_museum.svg" class="npo-logo"></td>
+                    <td>Israel Museum</td>
+                    <td>Jerusalem</td>
+                    <td>Israel's largest cultural institution and one of the world’s leading art and archaeology museums.</td>
+                    <td><a href="https://www.imj.org.il/" class="npo-link" target="_blank">https://www.imj.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/bezalel_academy_of_arts_and_design.svg" class="npo-logo"></td>
+                    <td>Bezalel Academy of Arts and Design</td>
+                    <td>Jerusalem</td>
+                    <td>Israel's national school of art, established in 1906.</td>
+                    <td><a href="https://www.bezalel.ac.il/" class="npo-link" target="_blank">https://www.bezalel.ac.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/bamah.svg" class="npo-logo"></td>
+                    <td>BAMAH</td>
+                    <td>Tel Aviv</td>
+                    <td>Harnessing culture from Israel to connect and inspire people.</td>
+                    <td><a href="https://www.bamaharts.org/" class="npo-link" target="_blank">https://www.bamaharts.org/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/artis.svg" class="npo-logo"></td>
+                    <td>Artis</td>
+                    <td>Tel Aviv</td>
+                    <td>Supports Israeli contemporary artists through grants and programs.</td>
+                    <td><a href="https://www.artis.art/" class="npo-link" target="_blank">https://www.artis.art/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/anatta.svg" class="npo-logo"></td>
+                    <td>Anatta</td>
+                    <td>Jerusalem</td>
+                    <td>Runs various cultural projects throughout Israel.</td>
+                    <td><a href="https://anatta.org.il/" class="npo-link" target="_blank">https://anatta.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/tel_aviv_museum_of_art.svg" class="npo-logo"></td>
+                    <td>Tel Aviv Museum of Art</td>
+                    <td>Tel Aviv</td>
+                    <td>A leading art museum in Israel, showcasing a wide range of Israeli and international art.</td>
+                    <td><a href="https://www.tamuseum.org.il/" class="npo-link" target="_blank">https://www.tamuseum.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/jerusalen_theatre.svg" class="npo-logo"></td>
+                    <td>Jerusalem Theatre</td>
+                    <td>Jerusalem</td>
+                    <td>A major performing arts center in Jerusalem, hosting a variety of plays, concerts, and events.</td>
+                    <td><a href="https://www.jerusalem-theatre.co.il/" class="npo-link" target="_blank">https://www.jerusalem-theatre.co.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/gesher-theatre.svg" class="npo-logo"></td>
+                    <td>Gesher Theatre</td>
+                    <td>Tel Aviv</td>
+                    <td>A bilingual theater company in Israel, performing plays in both Hebrew and Russian.</td>
+                    <td><a href="https://www.gesher-theatre.co.il/" class="npo-link" target="_blank">https://www.gesher-theatre.co.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/the_Israeli_opera.svg" class="npo-logo"></td>
+                    <td>The Israeli Opera</td>
+                    <td>Tel Aviv</td>
+                    <td>Israel's leading opera company, performing a wide range of classical and contemporary operas.</td>
+                    <td><a href="https://www.israel-opera.co.il/" class="npo-link" target="_blank">https://www.israel-opera.co.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/haifa_museum_of_art.svg" class="npo-logo"></td>
+                    <td>Haifa Museum of Art</td>
+                    <td>Haifa</td>
+                    <td>A major art museum in Haifa, showcasing a wide range of Israeli and international art.</td>
+                    <td><a href="https://www.hms.org.il/" class="npo-link" target="_blank">https://www.hms.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/cinemathequelogo.svg" class="npo-logo"></td>
+                    <td>Jerusalem Cinematheque</td>
+                    <td>Jerusalem</td>
+                    <td>A film archive and cinema in Jerusalem, showcasing a wide range of Israeli and international films.</td>
+                    <td><a href="https://jer-cin.org.il/" class="npo-link" target="_blank">https://jer-cin.org.il/</a></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><img src="logo/hansen.svg" class="npo-logo"></td>
+                    <td>Hansen House</td>
+                    <td>Jerusalem</td>
+                    <td>A cultural center in Jerusalem, hosting a variety of exhibitions, events, and workshops.</td>
+                    <td><a href="https://hansen.co.il/" class="npo-link" target="_blank">https://hansen.co.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/jlmseason.svg" class="npo-logo"></td>
+                    <td>Jerusalem Season of Culture</td>
+                    <td>Jerusalem</td>
+                    <td>An annual arts festival in Jerusalem, showcasing a wide range of Israeli and international artists.</td>
+                    <td><a href="https://aicf.org/artist/jerusalem-season-of-culture/" class="npo-link" target="_blank">https://jlmseason.com/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/israel_festival_jerusalen.svg" class="npo-logo"></td>
+                    <td>The Israel Festival</td>
+                    <td>Jerusalem</td>
+                    <td>An annual international arts festival in Jerusalem, showcasing a wide range of performing arts.</td>
+                    <td><a href="https://www.israel-festival.org/" class="npo-link" target="_blank">https://www.israel-festival.org/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/the_jerusalem_academy_of_music_and_dance.svg" class="npo-logo"></td>
+                    <td>The Jerusalem Academy of Music and Dance</td>
+                    <td>Jerusalem</td>
+                    <td>A leading music and dance academy in Israel, offering a wide range of programs.</td>
+                    <td><a href="https://jamd.ac.il/" class="npo-link" target="_blank">https://en.jamd.ac.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/eretzmuseum.svg" class="npo-logo"></td>
+                    <td>The Eretz Israel Museum</td>
+                    <td>Tel Aviv</td>
+                    <td>A museum of history and archaeology in Tel Aviv, showcasing a wide range of artifacts from Israel's past.</td>
+                    <td><a href="https://www.eretzmuseum.org.il/" class="npo-link" target="_blank">https://www.eretzisraelmuseum.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/dmh.svg" class="npo-logo"></td>
+                    <td>The Design Museum Holon</td>
+                    <td>Holon</td>
+                    <td>A museum of design in Holon, showcasing a wide range of Israeli and international design.</td>
+                    <td><a href="https://www.dmh.org.il/" class="npo-link" target="_blank">https://www.dmh.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/nli.svg" class="npo-logo"></td>
+                    <td>The Israel National Library</td>
+                    <td>Jerusalem</td>
+                    <td>The national library of Israel, housing a vast collection of books, manuscripts, and other materials.</td>
+                    <td><a href="https://www.nli.org.il/" class="npo-link" target="_blank">https://www.nli.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/tod.svg" class="npo-logo"></td>
+                    <td>The Tower of David Museum</td>
+                    <td>Jerusalem</td>
+                    <td>A museum of the history of Jerusalem, located in the Tower of David citadel.</td>
+                    <td><a href="https://www.tod.org.il/" class="npo-link" target="_blank">https://www.tod.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/blmj.svg" class="npo-logo"></td>
+                    <td>The Bible Lands Museum Jerusalem</td>
+                    <td>Jerusalem</td>
+                    <td>A museum of the history and culture of the ancient Near East, located in Jerusalem.</td>
+                    <td><a href="https://www.blmj.org/" class="npo-link" target="_blank">https://www.blmj.org/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/mots.svg" class="npo-logo"></td>
+                    <td>The Museum on the Seam</td>
+                    <td>Jerusalem</td>
+                    <td>A museum of contemporary art in Jerusalem, focusing on social and political issues.</td>
+                    <td><a href="https://www.mots.org.il/" class="npo-link" target="_blank">https://www.mots.org.il/</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><img src="logo/cartoon.svg" class="npo-logo"></td>
+                    <td>The Israel Cartoon Museum</td>
+                    <td>Holon</td>
+                    <td>A museum of cartoons and comics in Holon, showcasing a wide range of Israeli and international cartoons.</td>
+                    <td><a href="https://www.cartoon.org.il/" class="npo-link" target="_blank">https://www.cartoon.org.il/</a></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><img src="logo/suzannedellal.svg" class="npo-logo"></td>
+                    <td>Suzanne Dellal Centre for Dance and Theatre</td>
+                    <td>Tel Aviv</td>
+                    <td>A major center for contemporary dance and theater in Israel.</td>
+                    <td><a href="https://suzannedellal.org.il/" class="npo-link" target="_blank">https://suzannedellal.org.il/</a></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+        <p id="no-results">No results found.</p>
+        <p id="result-count"></p>
+    </div>
+</body>
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const tableRows = document.querySelectorAll('table tbody tr');
+        const noResults = document.getElementById('no-results');
+        const resultCount = document.getElementById('result-count');
+
+        function updateTable() {
+            const searchTerm = searchInput.value.toLowerCase();
+            let resultsFound = false;
+            let visibleCount = 1;
+
+            tableRows.forEach(row => {
+                const rowText = row.textContent.toLowerCase();
+                if (rowText.includes(searchTerm)) {
+                    row.style.display = '';
+                    resultsFound = true;
+                    row.querySelector('td:first-child').textContent = visibleCount++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+
+            if (resultsFound) {
+                noResults.style.display = 'none';
+                resultCount.textContent = `Showing ${visibleCount - 1} results.`;
+            } else {
+                noResults.style.display = 'block';
+                resultCount.textContent = '';
+            }
+        }
+
+        // Numerar las filas al cargar la página
+        updateTable();
+
+        searchInput.addEventListener('input', updateTable);
+    </script>
+</html>
